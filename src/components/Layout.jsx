@@ -37,12 +37,6 @@ export default function Layout() {
 
       <footer className="w-full max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-zinc-700 uppercase tracking-widest">
         <span>// clauzamvil_portfolio</span>
-        <button 
-          onClick={() => setIsDeepWork(!isDeepWork)}
-          className="px-4 py-1.5 border border-zinc-800 rounded-full text-[10px] text-zinc-500 hover:border-zinc-500 hover:text-zinc-300 transition-all active:scale-95 cursor-pointer"
-        >
-          {isDeepWork ? "EXIT_DEEP_WORK" : "ENTER_DEEP_WORK"}
-        </button>
       </footer>
     </div>
   );
