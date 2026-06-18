@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // Al ser el repo principal, base debe ser '/'
-  base: '/' 
+  // Esta ruta es vital para repositorios que no son la raíz absoluta
+  base: '/github.io/' 
 })
