@@ -26,7 +26,11 @@ export default function Home() {
         {/* Círculo decorativo de avatar */}
         <div className="relative shrink-0">
           <div className="w-40 h-40 md:w-52 md:h-52 rounded-full border border-zinc-800 shadow-xl bg-zinc-950/40 flex items-center justify-center backdrop-blur-sm">
-            <span className="text-4xl">🚀</span>
+            <span className="text-4xl"><img 
+              src={profile?.avatarUrl || "/personal1.jpg"} 
+              alt="Claudia Avatar" 
+              className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
+            /></span>
           </div>
         </div>
       </div>
