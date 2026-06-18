@@ -13,8 +13,7 @@ export default function ContactCTA() {
       title: "Mentorías & Docencia",
       description: "¿Quieres coordinar bootcamps de código, dictar talleres de lógica o planificar programas de transferencia tecnológica?",
       buttonText: "Coordinemos por Wsp un café",
-      // NOTA: Reemplaza 56912345678 por tu número real (código de país + número, sin el signo +)
-      link: "https://wa.me/56912345678?text=Hola%20Claudia!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20que%20coordinemos%20un%20caf%C3%A9%20para%20conversar.", 
+      link: "https://wa.me/56949949075?text=Hola%20Claudia!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20que%20coordinemos%20un%20caf%C3%A9%20para%20conversar.", 
       icon: "☕"
     }
   ];

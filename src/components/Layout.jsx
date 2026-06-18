@@ -13,20 +13,23 @@ export default function Layout() {
       <header className="w-full max-w-5xl mx-auto relative z-20">
         <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-base md:text-lg pt-4 font-semibold tracking-wide">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-white border-b-2 border-cyan-500 pb-1" : "text-zinc-500 hover:text-white transition-colors duration-300"}>
-            Home
+            Inicio
           </NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "text-white border-b-2 border-cyan-500 pb-1" : "text-zinc-500 hover:text-white transition-colors duration-300"}>
-            About
+            Sobre mí
           </NavLink>
           <NavLink to="/projects" className={({ isActive }) => isActive ? "text-white border-b-2 border-cyan-500 pb-1" : "text-zinc-500 hover:text-white transition-colors duration-300"}>
-            Projects
+            Proyectos
           </NavLink>
           {/* NUEVO ENLACE ADOCENADO AL RECLUTADOR TECNOLÓGICO */}
           <NavLink to="/leadership" className={({ isActive }) => isActive ? "text-white border-b-2 border-cyan-500 pb-1" : "text-zinc-500 hover:text-white transition-colors duration-300"}>
-            Leadership
+            Liderazgo
+          </NavLink>
+          <NavLink to="/certifications" className={({ isActive }) => isActive ? "text-white border-b-2 border-cyan-500 pb-1" : "text-zinc-500 hover:text-white transition-colors duration-300"}>
+            Certificaciones
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? "text-white border-b-2 border-cyan-500 pb-1" : "text-zinc-500 hover:text-white transition-colors duration-300"}>
-            Contact
+            Contacto
           </NavLink>
         </nav>
       </header>
@@ -35,7 +38,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <footer className="w-full max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-zinc-700 uppercase tracking-widest">
+      <footer className="w-full max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm font-mono text-zinc-700 uppercase tracking-widest">
         <span>// clauzamvil_portfolio</span>
       </footer>
     </div>

@@ -12,7 +12,7 @@ export default function Leadership() {
     <div className="py-12 w-full max-w-5xl mx-auto space-y-16 animate-fade-in">
       <header className="space-y-3 text-left">
         <h2 className="text-5xl font-black text-white tracking-tight">
-          Leadership & <span className="text-cyan-400">Strategy</span>
+          Liderazgo & <span className="text-cyan-400">Estrategia</span>
         </h2>
       </header>
 
@@ -43,7 +43,7 @@ export default function Leadership() {
               <span className={`block text-sm font-bold transition-colors ${index === selectedIndex ? 'text-cyan-400' : ''}`}>
                 {exp.role}
               </span>
-              <span className="text-xs font-mono opacity-80">{exp.institution}</span>
+              <span className="text-sm font-mono opacity-80">{exp.institution}</span>
             </button>
           ))}
         </div>

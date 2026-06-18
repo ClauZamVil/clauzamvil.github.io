@@ -39,7 +39,7 @@ export default function CompanyCarousel() {
       `}</style>
       
       {/* Título pequeño y sutil estilo comentario de código */}
-      <h3 className="text-center text-xs font-mono font-bold text-zinc-600 uppercase tracking-widest mb-10">
+      <h3 className="text-center text-sm font-mono font-bold text-zinc-600 uppercase tracking-widest mb-10">
         // Trayectoria & Colaboraciones corporativas
       </h3>
       

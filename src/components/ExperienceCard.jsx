@@ -11,14 +11,14 @@ export default function ExperienceCard({ item }) {
           </div>
           <div className="space-y-0.5">
             <h3 className="text-xl font-extrabold text-zinc-100 group-hover:text-cyan-400 transition-colors duration-300 leading-snug">{item.role}</h3>
-            <p className="text-xs font-mono text-zinc-500 font-bold uppercase tracking-wider">{item.institution}</p>
+            <p className="text-sm font-mono text-zinc-500 font-bold uppercase tracking-wider">{item.institution}</p>
           </div>
         </div>
         <p className="text-sm md:text-base text-zinc-400 leading-relaxed font-normal">{item.description}</p>
       </div>
       <div className="pt-4 mt-4 border-t border-zinc-900/60">
         <h4 className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 font-bold mb-1.5">// key_product_impact</h4>
-        <p className="text-xs md:text-sm text-cyan-400/90 font-medium bg-cyan-950/10 border border-cyan-950/50 px-4 py-3 rounded-xl italic">"{item.impact}"</p>
+        <p className="text-sm md:text-sm text-cyan-400/90 font-medium bg-cyan-950/10 border border-cyan-950/50 px-4 py-3 rounded-xl italic">"{item.impact}"</p>
       </div>
     </div>
   );

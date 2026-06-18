@@ -15,7 +15,7 @@ export default function Projects() {
       
       <header className="space-y-3 text-left">
         <h2 className="text-5xl font-black text-white tracking-tight">
-          My <span className="text-cyan-400">Projects</span>
+          Mis <span className="text-cyan-400">Proyectos</span>
         </h2>
         <p className="text-lg text-zinc-500 max-w-2xl">
           Selección de desarrollos técnicos y soluciones interactivas.
@@ -52,7 +52,7 @@ export default function Projects() {
                 ))}
               </div>
               {project.codeUrl && (
-                <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-mono font-bold uppercase text-zinc-500 hover:text-cyan-400 transition-colors">
+                <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-mono font-bold uppercase text-zinc-500 hover:text-cyan-400 transition-colors">
                   // View repository →
                 </a>
               )}

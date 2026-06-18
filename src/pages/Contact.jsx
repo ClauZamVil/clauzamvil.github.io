@@ -34,7 +34,7 @@ export default function Contact() {
       {/* Encabezado Principal */}
       <header className="space-y-3 text-center md:text-left">
         <h2 className="text-5xl font-black text-white tracking-tight">
-          Let's <span className="text-cyan-400">Talk</span>
+          Conver <span className="text-cyan-400">semos</span>
         </h2>
         <p className="text-lg text-zinc-500 max-w-2xl">
           ¿Tienes un proyecto en mente, una vacante o una iniciativa educativa? Elige una vía directa abajo o déjame un mensaje en el formulario.
@@ -47,7 +47,7 @@ export default function Contact() {
       {/* SEPARADOR ESTÉTICO */}
       <div className="relative flex py-4 items-center w-full">
         <div className="flex-grow border-t border-zinc-900"></div>
-        <span className="flex-shrink mx-4 text-zinc-600 text-xs font-mono tracking-widest uppercase">
+        <span className="flex-shrink mx-4 text-zinc-600 text-sm font-mono tracking-widest uppercase">
           // O si prefieres, escríbeme directamente
         </span>
         <div className="flex-grow border-t border-zinc-900"></div>
@@ -61,7 +61,7 @@ export default function Contact() {
         
         {/* Input: Nombre */}
         <div className="flex flex-col space-y-2">
-          <label htmlFor="name" className="text-xs font-bold text-zinc-400 uppercase tracking-wider">
+          <label htmlFor="name" className="text-sm font-bold text-zinc-400 uppercase tracking-wider">
             Nombre Completo
           </label>
           <input
@@ -71,14 +71,14 @@ export default function Contact() {
             required
             value={formData.name}
             onChange={handleChange}
-            placeholder="Ej. Claudia Zamorano"
+            placeholder="Ej. Claudia Vilches"
             className="w-full bg-zinc-900/40 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/20 transition-all font-sans text-sm"
           />
         </div>
 
         {/* Input: Email */}
         <div className="flex flex-col space-y-2">
-          <label htmlFor="email" className="text-xs font-bold text-zinc-400 uppercase tracking-wider">
+          <label htmlFor="email" className="text-sm font-bold text-zinc-400 uppercase tracking-wider">
             Correo Electrónico
           </label>
           <input
@@ -95,7 +95,7 @@ export default function Contact() {
 
         {/* Input: Message */}
         <div className="flex flex-col space-y-2">
-          <label htmlFor="message" className="text-xs font-bold text-zinc-400 uppercase tracking-wider">
+          <label htmlFor="message" className="text-sm font-bold text-zinc-400 uppercase tracking-wider">
             Tu Mensaje
           </label>
           <textarea

@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Leadership from './pages/Leadership'; // <-- IMPORTANTE
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Certifications from './pages/Certifications';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="leadership" element={<Leadership />} /> {/* <-- NUEVA RUTA */}
           <Route path="about" element={<About />} />
+          <Route path="certifications" element={<Certifications />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
