@@ -28,7 +28,7 @@ export default function About() {
         <div className="relative shrink-0">
           <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border border-zinc-800 shadow-2xl bg-zinc-950 flex items-center justify-center">
             <img 
-              src={profile?.avatarUrl || "/personal1.jpg"} 
+              src={profile?.avatarUrl || "/pixel.png"} 
               alt="Claudia Avatar" 
               className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
             />
