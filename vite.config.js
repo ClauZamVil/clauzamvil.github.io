@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // Esta ruta es vital para repositorios que no son la raíz absoluta
-  base: '/github.io/' 
+  // Esto es lo que permite que el navegador encuentre los archivos en la subcarpeta
+  base: '/Clauzamvil/' 
 })
