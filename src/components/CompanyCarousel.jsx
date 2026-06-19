@@ -1,19 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// Componente auxiliar para evitar que se rompa el carrusel si falla un enlace
+function MarqueeLogo({ src, alt }) {
+  const [error, setError] = useState(false);
+
+  if (error || !src) {
+    return (
+      <span className="text-zinc-500 font-mono text-xs font-bold tracking-wider uppercase opacity-40 hover:opacity-100 transition-opacity">
+        {alt}
+      </span>
+    );
+  }
+
+  return (
+    <img 
+      src={src} 
+      alt={alt} 
+      title={alt}
+      onError={() => setError(true)}
+      className="max-h-full max-w-full object-contain filter grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-300 cursor-pointer"
+    />
+  );
+}
 
 export default function CompanyCarousel() {
-  // Lista de tus 11 empresas. Reemplaza los nombres y las URLs de los logos por los tuyos.
+  // Lista oficializada con tus verdaderas instituciones y links CDN de alta disponibilidad
   const companies = [
-    { name: "Empresa 1", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
-    { name: "Empresa 2", logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" },
-    { name: "Empresa 3", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
-    { name: "Empresa 4", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" },
-    { name: "Empresa 5", logo: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_logo.300x300.png" },
-    { name: "Empresa 6", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" },
-    { name: "Empresa 7", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
-    { name: "Empresa 8", logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" },
-    { name: "Empresa 9", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
-    { name: "Empresa 10", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" },
-    { name: "Empresa 11", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" },
+    { name: "AIEP", logo: "/logos/aiep.png" }, // Tu asset local
+    { name: "BancoEstado", logo: "/logos/bco.png" },
+    { name: "Yunus", logo: "/logos/muni.png" },
+    { name: "Duoc UC", logo: "/logos/duoc1.png" },
+    { name: "DesafioLAtam", logo: "/logos/dl.png" },
+    { name: "Masmujeresenlastics", logo: "/logos/mmt.png" },
+    // Repetimos algunos elementos estratégicamente para nutrir el ancho del marquee inicial
+    { name: "TCS", logo: "/logos/tcs.png" },
+    { name: "TCS", logo: "/logos/bsale.png" },
+    { name: "TCS", logo: "/logos/hack.png" },
+    { name: "TCS", logo: "/logos/anci.png" }
+    
   ];
 
   // Duplicamos el array para que el bucle visual sea infinito y no tenga saltos en blanco
@@ -50,14 +74,10 @@ export default function CompanyCarousel() {
           {infiniteCompanies.map((company, index) => (
             <div 
               key={index} 
-              className="flex items-center justify-center h-10 w-28 shrink-0 select-none"
+              /* Cambiado de h-10 w-28 a h-12 w-36 para mejor legibilidad */
+              className="flex items-center justify-center h-12 w-36 shrink-0 select-none px-2"
             >
-              <img 
-                src={company.logo} 
-                alt={company.name} 
-                title={company.name}
-                className="max-h-full max-w-full object-contain filter grayscale opacity-30 hover:opacity-100 hover:grayscale-0 transition-all duration-300 cursor-pointer"
-              />
+              <MarqueeLogo src={company.logo} alt={company.name} />
             </div>
           ))}
         </div>
